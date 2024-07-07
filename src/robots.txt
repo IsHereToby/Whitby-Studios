@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /blog
+Allow: /
+
+Sitemap: https://gsdaccountants.com/sitemap.xml

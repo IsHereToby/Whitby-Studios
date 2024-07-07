@@ -1,0 +1,955 @@
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Standard meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="With over 15 years in the industry, we are accounting professionals providing expert accounting services for all businesses across Fresno, CA and the surrounding Central Valley area."
+    />
+    <meta name="keywords" content="" />
+    <link rel="canonical" href="https://https://gsdaccountants.com/" />
+
+    <!--Social Media Display-->
+    <meta
+      property="og:title"
+      content="Small Business Accounting Experts | GSD Accountants"
+    />
+    <meta
+      property="og:description"
+      content="With over 15 years in the industry, we are accounting professionals providing expert accounting services for all businesses across Fresno, CA and the surrounding Central Valley area."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://https://gsdaccountants.com/" />
+    <meta property="og:image" content="/assets/images/contact.jpg" />
+    <meta property="og:image:secure_url" content="/assets/images/contact.jpg" />
+
+    <!--Favicons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png@v1"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Preloads -->
+    <link rel="preload" as="image" href="assets/svgs/logo-white.svg" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/arsenal-v12-latin-700.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/zilla-slab-v11-latin-regular.woff2"
+      crossorigin
+    />
+
+    <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
+
+    <link rel="preload" as="image" href="assets/images/hero.webp" />
+
+    <!-- Sitewide Stylesheets and Scripts -->
+    <link rel="stylesheet" href="assets/css/root.css" />
+    <link rel="stylesheet" href="assets/css/dark.css" />
+    <script defer src="assets/js/nav.js"></script>
+    <script defer src="assets/js/dark.js"></script>
+
+    <noscript>
+      <link rel="stylesheet" href="assets/css/local.css" />
+    </noscript>
+    <!--Defer loading the whole page css-->
+    <link
+      rel="stylesheet"
+      href="assets/css/local.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+    <link rel="stylesheet" href="assets/css/critical.css" />
+    <link rel="preload" as="image" href="assets/images/david-m.webp" />
+
+    <!-- Script for Netlify Identity -->
+    <!-- <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer>
+        if (window.netlifyIdentity) {
+            window
+                .netlifyIdentity
+                .on('init', (user) => {
+                    if (!user) {
+                        window
+                            .netlifyIdentity
+                            .on('login', () => {
+                                document.location.href = '/admin/';
+                            });
+                    }
+                });
+        }
+    </script> -->
+
+    <!--For home page, use service keywords for the title, including location for SEO.
+        Other pages should just include the page name.
+        
+        EXAMPLE:
+        Home page - House Painting Contractors | Painters and Co. | TestCity, WA
+        About Page - About us | Painters and Co.
+        -->
+    <title>Small Business Accounting Experts | GSD Accountants</title>
+  </head>
+  <body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="index.html#main"
+      >Click To Skip To Main Content</a
+    >
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+      <div class="cs-top-bar">
+        <div class="cs-top-container">
+          <!--Nav Logo-->
+          <a href="index.html" class="cs-logo" aria-label="back to home">
+            <img
+              src="assets/images/logo2.svg"
+              alt="logo"
+              width="197"
+              height="43"
+              aria-hidden="true"
+              decoding="async"
+            />
+          </a>
+          <div class="cs-contact-group">
+            <a class="cs-contact-link" href="mailto:contact@gsdaccountants.com">
+              <picture class="cs-wrapper">
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="assets/images/yellow-mail.svg"
+                  alt="icon"
+                  width="24"
+                  height="24"
+                />
+              </picture>
+              <div class="cs-info">
+                <span class="cs-header">Send A Message</span>
+                <span class="cs-link-content">contact@gsdaccountants.com</span>
+              </div>
+            </a>
+            <a class="cs-contact-link" href="contact">
+              <picture class="cs-wrapper">
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="assets/images/yellow-pin.svg"
+                  alt="icon"
+                  width="24"
+                  height="24"
+                />
+              </picture>
+              <div class="cs-info">
+                <span class="cs-header">Located In</span>
+                <span class="cs-link-content">Fresno, CA</span>
+              </div>
+            </a>
+            <a
+              href="https://calendly.com/gsdaccountants/30min"
+              class="cs-button-solid"
+              target="_blank"
+              >Schedule Appointment</a
+            >
+          </div>
+          <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+          <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg
+              class="cs-moon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 480 480"
+              style="enable-background: new 0 0 480 480"
+              xml:space="preserve"
+            >
+              <path
+                d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"
+              />
+            </svg>
+            <img
+              class="cs-sun"
+              aria-hidden="true"
+              src="assets/images/sun.svg"
+              decoding="async"
+              alt="moon"
+              width="15"
+              height="15"
+            />
+          </button>
+        </div>
+      </div>
+      <!--Wrapped the bottom container in a wrapper div so we can have a full width background color, and centered the container inside of it-->
+      <div class="cs-bottom-bar">
+        <div class="cs-container">
+          <!--Navigation List-->
+          <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+              <div class="cs-box" aria-hidden="true">
+                <span class="cs-line cs-line1" aria-hidden="true"></span>
+                <span class="cs-line cs-line2" aria-hidden="true"></span>
+                <span class="cs-line cs-line3" aria-hidden="true"></span>
+              </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+              <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                <li class="cs-li">
+                  <a href="/" class="cs-li-link cs-active"> Home </a>
+                </li>
+                <li class="cs-li">
+                  <a href="/about" class="cs-li-link"> About </a>
+                </li>
+
+                <li class="cs-li cs-dropdown" tabindex="0">
+                  <span class="cs-li-link">
+                    Services
+                    <img
+                      class="cs-drop-icon"
+                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/down-yellow.svg"
+                      alt="dropdown icon"
+                      width="15"
+                      height="15"
+                      decoding="async"
+                      aria-hidden="true"
+                    />
+                  </span>
+                  <ul class="cs-drop-ul">
+                    <li class="cs-drop-li">
+                      <a href="/web-design" class="cs-li-link cs-drop-link"
+                        >Website Design
+                      </a>
+                    </li>
+                    <li class="cs-drop-li">
+                      <a href="/seo" class="cs-li-link cs-drop-link">SEO</a>
+                    </li>
+                    <li class="cs-drop-li">
+                      <a href="/hand-code" class="cs-li-link cs-drop-link"
+                        >Hand-Coded Development
+                      </a>
+                    </li>
+                    <li class="cs-drop-li">
+                      <a href="/lifetime" class="cs-li-link cs-drop-link"
+                        >Lifetime Updates
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="cs-li">
+                  <a href="/contact" class="cs-li-link"> Contact </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <a class="cs-call" href="tel:559-475-8887">
+            <picture class="cs-wrapper">
+              <img
+                class="cs-icon"
+                loading="lazy"
+                decoding="async"
+                src="assets/images/phone-1a.svg"
+                alt="icon"
+                width="24"
+                height="24"
+              />
+            </picture>
+            <div class="cs-info">
+              <span class="cs-header">Call Us Now</span>
+              <span class="cs-link-content">(559) 475-8887</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============================================ -->
+      <!--                    Hero                      -->
+      <!-- ============================================ -->
+
+      <section id="hero-1299">
+        <div class="cs-container">
+          <div class="cs-content">
+            <span class="cs-topper">Welcome to Whitby Studios Web Design</span>
+            <h1 class="cs-title">Small Business Web Design + Development</h1>
+            <p class="cs-text">
+              We don't flip cheap Wordpress themes. Invest in us for a great
+              quality website. We create SEO-optimized sites, and carefully
+              craft your content to lead to conversions and new clients.
+            </p>
+            <a
+              href="https://calendly.com/gsdaccountants/30min"
+              class="cs-button-solid"
+              target="_blank"
+              >Free Consultation</a
+            >
+          </div>
+          <!--To make your own background crops of people use https://www.remove.bg/-->
+        </div>
+        <div class="cs-container cs-container2">
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <a href="contact" class="cs-link">
+                <img
+                  class="cs-icon"
+                  src="assets/images/s1.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="40"
+                  height="40"
+                  aria-hidden="true"
+                />
+                <h2 class="cs-h3">Website Design</h2>
+                <p class="cs-item-text">
+                  Our graphic gurus will create a stunning custom-coded website
+                  that reflects your brand identity perfectly and stands out in
+                  the digital landscape.
+                </p>
+              </a>
+            </li>
+            <li class="cs-item">
+              <a href="contact" class="cs-link">
+                <img
+                  class="cs-icon"
+                  src="assets/images/s2.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="40"
+                  height="40"
+                  aria-hidden="true"
+                />
+                <h2 class="cs-h3">Hand-Coded Development</h2>
+                <p class="cs-item-text">
+                  Websites built by hand will out-perform most WordPress sites
+                  and drag and drop page builders which could cost thousands of
+                  dollars. When it comes to the web, the faster and more
+                  organized websites win.
+                </p>
+              </a>
+            </li>
+            <li class="cs-item">
+              <a href="contact" class="cs-link">
+                <img
+                  class="cs-icon"
+                  src="assets/images/s3.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="40"
+                  height="40"
+                  aria-hidden="true"
+                />
+                <h2 class="cs-h3">Search Engine Optimization</h2>
+                <p class="cs-item-text">
+                  Skyrocket your online visibility and drive targeted traffic
+                  with our data-driven SEO strategies and Core Web Vitals
+                  optimization.
+                </p>
+              </a>
+            </li>
+            <li class="cs-item">
+              <a href="contact" class="cs-link">
+                <img
+                  class="cs-icon"
+                  src="assets/images/s4.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="40"
+                  height="40"
+                  aria-hidden="true"
+                />
+                <h2 class="cs-h3">Lifetime Updates</h2>
+                <p class="cs-item-text">
+                  Seamless, real-time website updates that evolve with your
+                  business, ensuring your online presence stays ahead of the
+                  curve.
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--Floating Arrow-->
+        <!--We wrap it in a picture element wrapper so we can use the wrapper as a box for it to live inside of instead of the section wrapper. This allows us to add overflow:hidden to the wrapper to cut off the graphic at the edge of the screen. If we added overflow:hidden to the section container it would clip the overlapping service cards. So we add this wrapper to allow us to clip only the graphic. -->
+        <picture
+          class="cs-floater-wrapper"
+          style="position: absolute; top: 0; left: 0; width: 100%"
+        >
+          <img
+            class="cs-floater"
+            aria-hidden="true"
+            decoding="async"
+            src="assets/images/yellow-arrow-reversed.svg"
+            alt="graphic"
+            width="956"
+            height="708"
+          />
+        </picture>
+        <!--Background Image, background image added in CSS at 1600px wide for parallax effect-->
+        <picture
+          class="cs-background"
+          style="position: absolute; top: 0; left: 0; width: 100%"
+        >
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 1023px)"
+            srcset="/assets/images/whitby.webp"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 1024px)"
+            srcset="/assets/images/whitby.webp"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="assets/images/whitby.webp"
+            alt="buildings"
+            width="1280"
+            height="568"
+          />
+        </picture>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                 Side By Side                 -->
+      <!-- ============================================ -->
+
+      <section id="sbs-1308">
+        <div class="cs-container">
+          <!-- Left Image Section -->
+          <div class="cs-image-group">
+            <!--Floating Box-->
+            <div class="cs-box">
+              <span class="cs-desc">Reliable, Responsive, and Ready</span>
+            </div>
+            <!--Image-->
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="/assets/images/about-m.webp"
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="/assets/images/pfp9.jpg"
+              />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="assets/images/pfp9.jpg"
+                alt="david"
+                width="630"
+                height="630"
+                aria-hidden="true"
+              />
+            </picture>
+          </div>
+          <!-- Right Content Section-->
+          <div class="cs-content">
+            <span class="cs-topper">Who We Are</span>
+            <h2 class="cs-title">
+              Comprehensive Web Solutions, and Cutting-Edge Integrations
+            </h2>
+            <p class="cs-text">
+              My name is Toby, I'm a web developer and founder of Whitby Studios
+              Web Design. Before starting my own company, I worked in several
+              areas, such as administration, sales, logistics, finance, and I
+              even opened my own cleaning buisness once.
+            </p>
+            <p class="cs-text">
+              During these experiences, I realized that many companies had
+              difficulty acquiring a website. They were either expensive and
+              inaccessible, or they had to build their own. Worse still, there
+              were many who invested heavily in a website and were often
+              disappointed with the return.
+            </p>
+
+            <p class="cs-text">
+              After a period of intense study, I thought of a way to make
+              websites accessible to companies that cannot afford to shell out
+              thousands of dollars upfront. With the first month free and a
+              monthly fee of just $149.99,I am opening the doors for smaller
+              companies to have quality websites at more affordable prices.
+            </p>
+
+            <a class="cs-button-solid" href="about">More About Us</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                   Steps                      -->
+      <!-- ============================================ -->
+
+      <section id="services-1331">
+        <div class="cs-container">
+          <div class="cs-content">
+            <div class="cs-flex-group">
+              <span class="cs-topper">Our working process</span>
+              <h2 class="cs-title">How Whitby Studios Works for You</h2>
+            </div>
+            <p class="cs-text">
+              Our streamlined approach ensures seamless integration of our
+              client's vision and hassle-free implementation, ensuring
+              satisfaction and peace of mind.
+            </p>
+          </div>
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <a href="contact" class="cs-link">
+                <span class="cs-step">Step 1</span>
+                <h3 class="cs-h3">Design & Develop</h3>
+                <p class="cs-item-text">
+                  We kick-start the process with an exploration of your
+                  business's attributes. A design is drafted and showcased,
+                  paving the way for development. Your site is then custom-coded
+                  from scratch, tested, and fine-tuned until it achieves
+                  lightning-fast performance.
+                </p>
+              </a>
+            </li>
+            <li class="cs-item">
+              <a href="contact" class="cs-link">
+                <span class="cs-step">Step 2</span>
+                <h3 class="cs-h3">Hosting & Upkeep</h3>
+                <p class="cs-item-text">
+                  You'll have peace of mind with managed hosting - I'm on alert
+                  for any hiccups, ready to resolve them with real-time updates
+                  from my hosting provider. Plus, I keep a steady eye on Google
+                  Insights, ensuring your site's visitor experience remains
+                  consistently fast from all devices.
+                </p>
+              </a>
+            </li>
+            <li class="cs-item">
+              <a href="contact" class="cs-link">
+                <span class="cs-step">Step 3</span>
+                <h3 class="cs-h3">Lifetime Updates</h3>
+                <p class="cs-item-text">
+                  I stay informed on all of Google's updates to website ranking
+                  and SEO best practices. When covered by my services, your site
+                  will be updated and maintained on a regular basis. My clients'
+                  sites are a reflection of my work, so if my site receives a
+                  maintenance update, yours will too.
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <picture class="cs-background">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/building-white-m.webp"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/building-white.jpg"
+          />
+          <img
+            src="assets/images/building-white.jpg"
+            alt="building"
+            width="1920"
+            height="700"
+            decoding="async"
+            loading="lazy"
+          />
+        </picture>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                   Services                   -->
+      <!-- ============================================ -->
+
+      <section id="services-1301">
+        <div class="cs-container">
+          <div class="cs-content">
+            <div class="cs-flex-group">
+              <span class="cs-topper">Our Services</span>
+              <h2 class="cs-title">Professional Business Growth Strategies</h2>
+            </div>
+            <p class="cs-text">
+              Whitby Studios offers reliable web development services and
+              unparalleled design precision and strategic insights built to
+              support your business's success.
+            </p>
+          </div>
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <a href="contact" class="cs-link">
+                <img
+                  class="cs-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/brain.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="40"
+                  height="40"
+                  aria-hidden="true"
+                />
+                <h3 class="cs-h3">Web Design & Development</h3>
+                <p class="cs-item-text">
+                  Elevate your online presence with our bespoke web design and
+                  development solutions. We craft visually stunning,
+                  user-friendly websites that not only reflect your brand
+                  identity but also provide an immersive experience for your
+                  audience.
+                </p>
+              </a>
+            </li>
+            <li class="cs-item">
+              <a href="contact" class="cs-link">
+                <img
+                  class="cs-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/users.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="40"
+                  height="40"
+                  aria-hidden="true"
+                />
+                <h3 class="cs-h3">SEO & Conversions</h3>
+                <p class="cs-item-text">
+                  Our team employs a multi-faceted strategy tailored to your
+                  business's unique needs. We focus on keyword research, content
+                  optimisation, site speed enhancements, and building a strong
+                  backlink profile to elevate your online visibility and drive
+                  targeted traffic to your site.
+                </p>
+              </a>
+            </li>
+            <li class="cs-item">
+              <a href="contact" class="cs-link">
+                <img
+                  class="cs-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Layer.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="40"
+                  height="40"
+                  aria-hidden="true"
+                />
+                <h3 class="cs-h3">Copywriting Mastery</h3>
+                <p class="cs-item-text">
+                  Words matter, and we specialize in weaving narratives that
+                  resonate. Our copywriting services go beyond mere words – we
+                  craft stories that engage, persuade, and leave a lasting
+                  impact. From website content to blog posts and marketing copy,
+                  we've got your story covered.
+                </p>
+              </a>
+            </li>
+            <li class="cs-item">
+              <a href="contact" class="cs-link">
+                <img
+                  class="cs-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Layer.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="40"
+                  height="40"
+                  aria-hidden="true"
+                />
+                <h3 class="cs-h3">Brand Strategy</h3>
+                <p class="cs-item-text">
+                  Our goal is to identify key strengths and areas for
+                  improvement and develop a strategic plan that aligns your
+                  business goals with customer needs, strengthening your market
+                  presence.
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                    Stats                     -->
+      <!-- ============================================ -->
+
+      <section id="stats-1230">
+        <div class="cs-container">
+          <div class="cs-content">
+            <div class="cs-flex">
+              <span class="cs-topper">YOU'RE IN GOOD COMPANY</span>
+              <h2 class="cs-title">
+                Web Design Services With A Personal Touch
+              </h2>
+              <p class="cs-text">
+                At the heart of our web design services lies a deep commitment
+                to understanding and catering to each client's unique
+                requirements. Our approach isn't just about building websites;
+                it's about giving individualized attention, pinpointing
+                potential growth opportunities, and continually seeking more
+                efficient solutions. When something arises, we're proactive in
+                our communication, ensuring that you always have the best
+                support in place for growth and success.
+              </p>
+            </div>
+            <ul class="cs-card-group">
+              <li class="cs-item">
+                <img
+                  src="assets/images/first.svg"
+                  alt="icon"
+                  class="cs-icon"
+                  aria-hidden="true"
+                  decoding="async"
+                  width="60"
+                  height="60"
+                />
+                <h3 class="cs-h3">We Always Put You First</h3>
+              </li>
+              <li class="cs-item">
+                <img
+                  src="assets/images/solutions.svg"
+                  alt="icon"
+                  class="cs-icon"
+                  aria-hidden="true"
+                  decoding="async"
+                  width="60"
+                  height="60"
+                />
+                <h3 class="cs-h3">Innovative Solutions</h3>
+              </li>
+              <li class="cs-item">
+                <img
+                  src="assets/images/book.svg"
+                  alt="icon"
+                  class="cs-icon"
+                  aria-hidden="true"
+                  decoding="async"
+                  width="60"
+                  height="60"
+                />
+                <h3 class="cs-h3">Comprehensive Support</h3>
+              </li>
+              <li class="cs-item">
+                <img
+                  src="assets/images/personalized.svg"
+                  alt="icon"
+                  class="cs-icon"
+                  aria-hidden="true"
+                  decoding="async"
+                  width="60"
+                  height="60"
+                />
+                <h3 class="cs-h3">Personalized Attention</h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                     CTA                      -->
+      <!-- ============================================ -->
+
+      <section id="cta-1394">
+        <div class="cs-container">
+          <div class="cs-content">
+            <span class="cs-topper">Get In Touch</span>
+            <h2 class="cs-title">Get Your Customized Web Design Solutions</h2>
+            <p class="cs-text">
+              Discover the difference with our personalized web design services,
+              meticulously crafted to elevate your unique brand identity and
+              drive your business success.
+            </p>
+            <a
+              href="https://calendly.com/gsdaccountants/30min"
+              class="cs-button-solid"
+              target="_blank"
+              >Schedule An Appointment</a
+            >
+          </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/cta-m.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/working-together.webp"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="assets/images/working-together.webp"
+            alt="meeting"
+            width="1920"
+            height="486"
+            aria-hidden="true"
+          />
+        </picture>
+      </section>
+    </main>
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-308">
+      <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+          <a aria-label="go back to home" class="cs-logo" href="index.html">
+            <img
+              class="cs-logo-img"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="assets/images/logo.png"
+              alt="logo"
+              width="178"
+              height="32"
+            />
+          </a>
+          <p class="cs-text">
+            Exceptional accounting services, ensuring precision, transparency,
+            and dedicated support for all your financial needs.
+          </p>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Sitemap</span>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="index.html">Home</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="about">About Us</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="contact">Contact</a>
+          </li>
+        </ul>
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Categories</span>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="web-design">Website Design</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="seo">SEO</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="hand-code">Hand-Coded Development </a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="lifetime">Lifetime Updates </a>
+          </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Contact</span>
+          </li>
+          <!-- <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/phone-stroke.svg" alt="phone" width="24" height="24">
+                <a class="cs-nav-link cs-phone" href="tel: 123-456-7890">(123) 456-7890</a>
+            </li> -->
+          <li class="cs-nav-li">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="assets/images/email-stroke.svg"
+              alt="email"
+              width="24"
+              height="24"
+            />
+            <a
+              class="cs-nav-link cs-email"
+              href="mailto:contact@gsdaccountants.com"
+              >contact@gsdaccountants.com</a
+            >
+          </li>
+          <li class="cs-nav-li">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="assets/images/pin-stroke.svg"
+              alt="pin"
+              width="24"
+              height="24"
+            />
+            <a
+              class="cs-nav-link cs-address"
+              href="contact"
+              target="_blank"
+              rel="noopener"
+            >
+              Fresno, CA
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="cs-bottom">
+        <span class="cs-copyright"
+          >© Copyright 2023 - Present - Designed & Developed By<a
+            class="cs-copyright-link"
+            href="https://www.oakharborwebdesigns.com/"
+            target="_blank"
+          >
+            Oak Harbor Web Designs</a
+          ></span
+        >
+      </div>
+    </footer>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DXYGKB28S4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DXYGKB28S4");
+    </script>
+  </body>
+</html>

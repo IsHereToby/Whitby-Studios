@@ -1,0 +1,560 @@
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+
+<!DOCTYPE html>
+<html lang="en" ml-update="aware">
+  <head>
+    <!-- Standard meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Real estate accounting services, offered by our firm, cater to the specific financial needs of real estate professionals and businesses. These services encompass property financial management, rent collection, expense tracking, and financial reporting."
+    />
+    <meta name="keywords" content="" />
+    <link
+      rel="canonical"
+      href="https://https://gsdaccountants.com/small-business-accounting/"
+    />
+
+    <!--Social Media Display-->
+    <meta
+      property="og:title"
+      content="Small Business Accounting | GSD Accountants"
+    />
+    <meta
+      property="og:description"
+      content="Real estate accounting services, offered by our firm, cater to the specific financial needs of real estate professionals and businesses. These services encompass property financial management, rent collection, expense tracking, and financial reporting."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://https://gsdaccountants.com/small-business-accounting/"
+    />
+    <meta property="og:image" content="/assets/images/contact.jpg" />
+    <meta property="og:image:secure_url" content="/assets/images/contact.jpg" />
+
+    <!--Favicons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/favicon-32x32.png?v1"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Preloads -->
+    <link rel="preload" as="image" href="/assets/svgs/logo-white.svg" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/arsenal-v12-latin-700.woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/zilla-slab-v11-latin-regular.woff2"
+      crossorigin=""
+    />
+
+    <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
+
+    <link rel="preload" as="image" href="/assets/images/banner-m.webp" />
+
+    <!-- Sitewide Stylesheets and Scripts -->
+    <link rel="stylesheet" href="/assets/css/root.css" />
+    <link rel="stylesheet" href="/assets/css/dark.css" />
+    <script defer="" src="/assets/js/nav.js"></script>
+    <script defer="" src="/assets/js/dark.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/interior.css" />
+
+    <!--For home page, use service keywords for the title, including location for SEO.
+  Other pages should just include the page name.
+  
+  EXAMPLE:
+  Home page - House Painting Contractors | Painters and Co. | TestCity, WA
+  About Page - About us | Painters and Co.
+  -->
+    <title>Small Business Accounting | GSD Accountants</title>
+  </head>
+  <body class="">
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main"
+      >Click To Skip To Main Content</a
+    >
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+      <div class="cs-top-bar">
+        <div class="cs-top-container">
+          <!--Nav Logo-->
+          <a href="/" class="cs-logo" aria-label="back to home">
+            <img
+              src="/assets/images/logo2.svg"
+              alt="logo"
+              width="197"
+              height="43"
+              aria-hidden="true"
+              decoding="async"
+            />
+          </a>
+          <div class="cs-contact-group">
+            <a class="cs-contact-link" href="mailto:contact@gsdaccountants.com">
+              <picture class="cs-wrapper">
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/images/yellow-mail.svg"
+                  alt="icon"
+                  width="24"
+                  height="24"
+                />
+              </picture>
+              <div class="cs-info">
+                <span class="cs-header">Send A Message</span>
+                <span class="cs-link-content">contact@gsdaccountants.com</span>
+              </div>
+            </a>
+            <a class="cs-contact-link" href="/contact">
+              <picture class="cs-wrapper">
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="/assets/images/yellow-pin.svg"
+                  alt="icon"
+                  width="24"
+                  height="24"
+                />
+              </picture>
+              <div class="cs-info">
+                <span class="cs-header">Located In</span>
+                <span class="cs-link-content">Fresno, CA</span>
+              </div>
+            </a>
+            <a
+              href="https://calendly.com/gsdaccountants/30min"
+              class="cs-button-solid"
+              target="_blank"
+              >Schedule Appointment</a
+            >
+          </div>
+          <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+          <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg
+              class="cs-moon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 480 480"
+              style="enable-background: new 0 0 480 480"
+              xml:space="preserve"
+            >
+              <path
+                d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"
+              ></path>
+            </svg>
+            <img
+              class="cs-sun"
+              aria-hidden="true"
+              src="/assets/images/sun.svg"
+              decoding="async"
+              alt="moon"
+              width="15"
+              height="15"
+            />
+          </button>
+        </div>
+      </div>
+      <!--Wrapped the bottom container in a wrapper div so we can have a full width background color, and centered the container inside of it-->
+      <div class="cs-bottom-bar">
+        <div class="cs-container">
+          <!--Navigation List-->
+          <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+              <div class="cs-box" aria-hidden="true">
+                <span class="cs-line cs-line1" aria-hidden="true"></span>
+                <span class="cs-line cs-line2" aria-hidden="true"></span>
+                <span class="cs-line cs-line3" aria-hidden="true"></span>
+              </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+              <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                <li class="cs-li">
+                  <a href="/" class="cs-li-link"> Home </a>
+                </li>
+                <li class="cs-li">
+                  <a href="/about" class="cs-li-link"> About </a>
+                </li>
+                <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                <li class="cs-li cs-dropdown" tabindex="0">
+                  <span class="cs-li-link">
+                    Services
+                    <img
+                      class="cs-drop-icon"
+                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/down-yellow.svg"
+                      alt="dropdown icon"
+                      width="15"
+                      height="15"
+                      decoding="async"
+                      aria-hidden="true"
+                    />
+                  </span>
+                  <ul class="cs-drop-ul">
+                    <li class="cs-drop-li">
+                      <a href="/web-design" class="cs-li-link cs-drop-link"
+                        >Website Design
+                      </a>
+                    </li>
+                    <li class="cs-drop-li">
+                      <a href="/seo" class="cs-li-link cs-drop-link">SEO</a>
+                    </li>
+                    <li class="cs-drop-li">
+                      <a href="/hand-code" class="cs-li-link cs-drop-link"
+                        >Hand-Coded Development
+                      </a>
+                    </li>
+                    <li class="cs-drop-li">
+                      <a href="/lifetime" class="cs-li-link cs-drop-link"
+                        >Lifetime Updates
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="cs-li">
+                  <a href="/contact" class="cs-li-link"> Contact </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <a class="cs-call" href="tel:559-475-8887">
+            <picture class="cs-wrapper">
+              <img
+                class="cs-icon"
+                loading="lazy"
+                decoding="async"
+                src="/assets/images/phone-1a.svg"
+                alt="icon"
+                width="24"
+                height="24"
+              />
+            </picture>
+            <div class="cs-info">
+              <span class="cs-header">Call Us Now</span>
+              <span class="cs-link-content">(559) 475-8887</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============================================ -->
+      <!--                   Banner                     -->
+      <!-- ============================================ -->
+
+      <div id="banner-1400">
+        <div class="cs-container">
+          <span class="cs-int-title">Website Design</span>
+          <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/small-business-accounting" class="cs-link cs-active"
+              >Services</a
+            >
+          </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/banner-m.webp"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/design-brainstorm.webp"
+          />
+          <img
+            decoding="async"
+            src="/assets/images/design-brainstorm.webp"
+            alt="texes laughing"
+            width="1280"
+            height="568"
+            aria-hidden="true"
+          />
+        </picture>
+      </div>
+
+      <!-- ============================================ -->
+      <!--                 Content Page                 -->
+      <!-- ============================================ -->
+
+      <section id="content-page-851">
+        <div class="cs-container">
+          <div class="cs-content">
+            <h1 class="cs-title">Brand-Centric Web Design</h1>
+            <p>
+              Our custom web design service focuses on creating a website that
+              visually represents your brand's unique identity. We invest over
+              40 hours in designing, developing, and testing your site to ensure
+              every element aligns with your business vision and goals.
+            </p>
+            <p>
+              As an experienced web designer in Utah, we start by gaining a deep
+              understanding of your brand's characteristics. This insight forms
+              the foundation of your website's design. Whether you have existing
+              branding elements or need assistance developing new ones
+              (additional costs may apply for services like logo design), we
+              ensure your website captures your brand's essence.
+            </p>
+            <p>
+              We take pride in delivering affordable websites for small
+              businesses that make a lasting impact. Trust our expertise in
+              small business web design to create a site that resonates with
+              your target audience and elevates your online presence.
+            </p>
+            <h2>Idea to Implementation</h2>
+            <p>
+              We leverage creativity to build affordable websites for small
+              businesses. We’ll collaborate with you to craft a design that
+              enhances your brand identity, involving you at every step! Our
+              process involves crafting a unique concept, and sharing it with
+              you for approval. Together, we’ll create a final design that makes
+              your business look better than ever.
+            </p>
+            <p>
+              Unlike our competitors, we don’t rest on the laurels of page
+              builders, like WordPress or Wix. Our custom-built websites give us
+              full control over the code, allowing for precise adjustments that
+              make your site as unique as your brand.
+            </p>
+            <h2>Seamless Web Performance</h2>
+            <p>
+              Your website shouldn’t just look good. It needs to be functional
+              for both you and your users. We’ll ensure that your site visitors
+              enjoy a fast, smooth, and intuitive user experience from the
+              second they arrive at your landing page. Our stunning small
+              business web designs are crafted with this in mind, so you can
+              retain customers, improve your search engine rankings, and enhance
+              engagement.
+            </p>
+            <p>
+              Plus, our affordable websites for small businesses accommodate
+              visitors from all different devices – even those using ancient
+              smartphones! It’s this attention to detail, in both design and
+              functionality, that will truly set your business apart in the
+              digital space.
+            </p>
+            <h2>Future-Ready Web Design</h2>
+            <p>
+              Your website should grow alongside your business, not slow it
+              down. Think of our custom web designs as sunshine – here to cast
+              glorious digital rays on your company, and make it flourish!
+            </p>
+            <p>
+              From adding new features and updating content, to scaling up for
+              increased traffic, we’re the only name worth knowing for web
+              design in Utah. It’s the best way to future-proof your online
+              presence, and ensure that your website remains a powerful tool.
+              That means greater flexibility, and greater productivity! It’s
+              just one of the reasons we’re Utah web designer experts.
+            </p>
+            <h2>Websites on Your Terms</h2>
+            <p>
+              You want your business to give off a good first impression, and
+              our small business web designs are a great place to start. Whether
+              it’s the layout of your landing page, the boldness of your blog,
+              or the functionality of your FAQs, our Utah web designers will
+              tailor every element of your site. Our bespoke method means your
+              website will stand out in the dizzying digital world and perform
+              at its highest level!
+            </p>
+            <h2>Connect with Whitby Studios Today</h2>
+            <p>
+              If you're a small business owner and need web design services that
+              understand the intricacies of your industry, look no further.
+              <a href="/contact">Contact Whitby Studios</a> to learn how our
+              small business web development expertise can help you optimize
+              performance and user experience.
+            </p>
+          </div>
+          <div class="cs-image-group">
+            <picture class="cs-picture">
+              <!--Mobile Image-->
+              <source
+                media="(max-width: 600px)"
+                srcset="/assets/images/sidebar.jpg"
+              />
+              <!--Tablet and above Image-->
+              <source
+                media="(min-width: 601px)"
+                srcset="/assets/images/sidebar.jpg"
+              />
+              <img
+                decoding="async"
+                src="/assets/images/sidebar.jpg"
+                alt="person"
+                width="542"
+                height="520"
+                aria-hidden="true"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-308">
+      <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+          <a aria-label="go back to home" class="cs-logo" href="/">
+            <img
+              class="cs-logo-img"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/logo.png"
+              alt="logo"
+              width="178"
+              height="32"
+            />
+          </a>
+          <p class="cs-text">
+            Exceptional accounting services, ensuring precision, transparency,
+            and dedicated support for all your financial needs.
+          </p>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Sitemap</span>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="/">Home</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="/about">About Us</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Categories</span>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="/web-design">Website Design </a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="/seo">SEO</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="/hand-code">Hand-Coded Development </a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="/lifetime">Lifetime Updates </a>
+          </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Contact</span>
+          </li>
+          <!-- <li class="cs-nav-li">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/phone-stroke.svg" alt="phone" width="24" height="24">
+          <a class="cs-nav-link cs-phone" href="tel: 123-456-7890">(123) 456-7890</a>
+      </li> -->
+          <li class="cs-nav-li">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/email-stroke.svg"
+              alt="email"
+              width="24"
+              height="24"
+            />
+            <a
+              class="cs-nav-link cs-email"
+              href="mailto:contact@gsdaccountants.com"
+              >contact@gsdaccountants.com</a
+            >
+          </li>
+          <li class="cs-nav-li">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/pin-stroke.svg"
+              alt="pin"
+              width="24"
+              height="24"
+            />
+            <a
+              class="cs-nav-link cs-address"
+              href="/contact"
+              target="_blank"
+              rel="noopener"
+            >
+              Fresno, CA
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="cs-bottom">
+        <span class="cs-copyright"
+          >© Copyright 2023 - Present - Designed &amp; Developed By<a
+            class="cs-copyright-link"
+            href="https://www.oakharborwebdesigns.com/"
+            target="_blank"
+          >
+            Oak Harbor Web Designs</a
+          ></span
+        >
+      </div>
+    </footer>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-DXYGKB28S4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DXYGKB28S4");
+    </script>
+  </body>
+</html>
