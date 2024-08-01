@@ -182,7 +182,11 @@
   }
   #hero-1299 .cs-background:before {
     opacity: 1;
-    background: linear-gradient(270deg, rgba(255, 255, 255, 0.96) 60.66%, rgba(255, 255, 255, 0) 71.43%);
+    background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.96) 60.66%,
+      rgba(255, 255, 255, 0) 71.43%
+    );
   }
 }
 /* Desktop - 1024px */
@@ -190,7 +194,7 @@
   #hero-1299 .cs-picture-wrapper,
   #hero-1299 .cs-background,
   #hero-1299 .cs-floater-wrapper {
-    height: 80%;
+    height: 73%;
   }
   #hero-1299 .cs-floater {
     left: 40%;
@@ -329,8 +333,7 @@
     line-height: 1.5em;
     margin: 0;
     color: var(--bodyTextColor);
-    transition: color 0.3s,
-                opacity 0.3s;
+    transition: color 0.3s, opacity 0.3s;
   }
 }
 /* Tablet - 768px */
