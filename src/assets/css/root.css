@@ -41,9 +41,6 @@
     margin-bottom: 0.25rem;
     display: block;
   }
-  body.dark-mode {
-    color: var(--primary);
-  }
   .cs-title {
     font-size: var(--headerFontSize);
     text-transform: capitalize;
@@ -1631,7 +1628,6 @@
     display: block;
     height: 100%;
     width: 100%;
-    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/chevron-pattern-light2.svg");
     background-position: center;
     background-size: auto;
     background-repeat: repeat;

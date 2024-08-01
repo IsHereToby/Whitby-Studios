@@ -57,7 +57,9 @@
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Preloads -->
-    <link rel="preload" as="image" href="assets/svgs/logo-white.svg" />
+    <link rel="preload" as="image" href="assets/images/me7.jpg" />
+    <link rel="preload" as="image" href="assets/images/me10.jpg" />
+    <link rel="preload" as="image" href="assets/images/IMG_3704.jpg" />
     <link
       rel="preload"
       as="font"
@@ -72,11 +74,6 @@
       href="assets/fonts/zilla-slab-v11-latin-regular.woff2"
       crossorigin
     />
-
-    <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
-
-    <link rel="preload" as="image" href="assets/images/hero.webp" />
-
     <!-- Sitewide Stylesheets and Scripts -->
     <link rel="stylesheet" href="assets/css/root.css" />
     <link rel="stylesheet" href="assets/css/dark.css" />
@@ -94,7 +91,6 @@
       onload="this.media='all'; this.onload=null;"
     />
     <link rel="stylesheet" href="assets/css/critical.css" />
-    <link rel="preload" as="image" href="assets/images/david-m.webp" />
 
     <!-- Script for Netlify Identity -->
     <!-- <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -881,20 +877,5 @@
         >
       </div>
     </footer>
-
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-DXYGKB28S4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-DXYGKB28S4");
-    </script>
   </body>
 </html>
