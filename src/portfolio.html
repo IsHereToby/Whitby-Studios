@@ -72,6 +72,7 @@
     <!-- Sitewide Stylesheets and Scripts -->
     <link rel="stylesheet" href="/assets/css/root.css" />
     <link rel="stylesheet" href="/assets/css/dark.css" />
+    <link rel="stylesheet" href="/assets/css/portfolio.css" />
     <script defer="" src="/assets/js/nav.js"></script>
     <script defer="" src="/assets/js/dark.js"></script>
 
@@ -202,7 +203,7 @@
                   <a href="/" class="cs-li-link"> Home </a>
                 </li>
                 <li class="cs-li">
-                  <a href="/about" class="cs-li-link cs-active"> About </a>
+                  <a href="/about" class="cs-li-link"> About </a>
                 </li>
                 <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                 <li class="cs-li cs-dropdown" tabindex="0">
@@ -243,7 +244,9 @@
                   <a href="/pricing" class="cs-li-link"> Pricing </a>
                 </li>
                 <li class="cs-li">
-                  <a href="/portfolio" class="cs-li-link"> Portfolio </a>
+                  <a href="/portfolio" class="cs-li-link cs-active">
+                    Portfolio
+                  </a>
                 </li>
                 <li class="cs-li">
                   <a href="/contact" class="cs-li-link"> Contact </a>
@@ -279,10 +282,10 @@
 
       <div id="banner-1400">
         <div class="cs-container">
-          <span class="cs-int-title">About Us</span>
+          <span class="cs-int-title">Portfolio</span>
           <div class="cs-breadcrumbs">
             <a href="/" class="cs-link">Home</a>
-            <a href="/about" class="cs-link cs-active">About</a>
+            <a href="/portfolio" class="cs-link">Portfolio</a>
           </div>
         </div>
         <!--Background Image-->
@@ -309,148 +312,177 @@
       </div>
 
       <!-- ============================================ -->
-      <!--                 Side By Side                 -->
+      <!--                   Portfolio                     -->
       <!-- ============================================ -->
-
-      <section id="sbs-1308">
+      <section id="gallery-1374">
         <div class="cs-container">
-          <!-- Left Image Section -->
-          <div class="cs-image-group">
-            <!--Floating Box-->
-            <div class="cs-box">
-              <span class="cs-desc">Detail Oriented</span>
-            </div>
-            <!--Image-->
-            <picture class="cs-picture">
-              <source
-                media="(max-width: 600px)"
-                srcset="/assets/images/IMG_3704.webp"
-              />
-              <source
-                media="(min-width: 601px)"
-                srcset="/assets/images/IMG_3704.jpg"
-              />
-              <img
-                loading="lazy"
-                decoding="async"
-                src="assets/images/IMG_3704.jpg"
-                alt="toby"
-                width="630"
-                height="630"
-                aria-hidden="true"
-              />
-            </picture>
-          </div>
-          <!-- Right Content Section-->
           <div class="cs-content">
-            <span class="cs-topper">About Us</span>
-            <h2 class="cs-title">About Whitby Studios</h2>
+            <span class="cs-topper">Recent Projects</span>
+            <h2 class="cs-title">
+              Explore Our Recent Work For Some Local Businesses
+            </h2>
             <p class="cs-text">
-              My name is Toby, I'm a web developer and founder of Whitby Studios
-              Web Design. Before starting my own company, I worked in several
-              areas, such as administration, sales, logistics, finance, and I
-              even opened my own cleaning buisness once.
+              Witness firsthand how Whitby Studios has helped businesses like
+              yours thrive in the digital landscape. Our showcased projects
+              highlight our commitment to creativity, innovation, and tailored
+              solutions.
             </p>
-            <p class="cs-text">
-              During these experiences, I realized that many companies had
-              difficulty acquiring a website. They were either expensive and
-              inaccessible, or they had to build their own. Worse still, there
-              were many who invested heavily in a website and were often
-              disappointed with the return.
-            </p>
-            <p class="cs-text">
-              After a period of intense study, I thought of a way to make
-              websites accessible to companies that cannot afford to shell out
-              thousands of dollars upfront. With the first month free and a
-              monthly fee of just $149.99,I am opening the doors for smaller
-              companies to have quality websites at more affordable prices.
-            </p>
-            <a href="/contact" class="cs-button-solid">Contact Us Now</a>
           </div>
+          <ul class="cs-image-group">
+            <li class="cs-item">
+              <a
+                class="cs-link"
+                href="https://hispanic-open-learning-academy.netlify.app/"
+                target="_blank"
+                ><picture class="cs-picture"
+                  ><source
+                    media="(max-width: 600px)"
+                    srcset="/assets/images/gallery1.png" />
+                  <source
+                    media="(min-width: 601px)"
+                    srcset="/assets/images/gallery1.png" />
+                  <img
+                    alt="detailing"
+                    decoding="async"
+                    height="346"
+                    src="/assets/images/gallery1.png"
+                    width="346"
+                    loading="lazy"
+                /></picture>
+                <div class="cs-item-text">
+                  <div class="cs-flex">
+                    <h3 class="cs-h3">Hispanic Open Learning Academy</h3>
+                    <span class="cs-desc"
+                      >Spanish Language Program &amp; Academy</span
+                    >
+                  </div>
+                  <picture class="cs-icon-wrapper"
+                    ><img
+                      alt="arrow"
+                      decoding="async"
+                      height="374"
+                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                      width="413"
+                      aria-hidden="true"
+                      class="cs-icon"
+                  /></picture></div
+              ></a>
+            </li>
+            <li class="cs-item">
+              <a
+                class="cs-link"
+                href="https://stitchcarmechanic.netlify.app/"
+                target="_blank"
+                ><picture class="cs-picture"
+                  ><source
+                    media="(max-width: 600px)"
+                    srcset="/assets/images/mechanic.png" />
+                  <source
+                    media="(min-width: 601px)"
+                    srcset="/assets/images/mechanic.png" />
+                  <img
+                    alt="photography"
+                    decoding="async"
+                    height="346"
+                    src="/assets/images/mechanic.png"
+                    width="346"
+                    loading="lazy"
+                /></picture>
+                <div class="cs-item-text">
+                  <div class="cs-flex">
+                    <h3 class="cs-h3">Stitch Car Mechanics</h3>
+                    <span class="cs-desc">Auto Repair Services</span>
+                  </div>
+                  <picture class="cs-icon-wrapper"
+                    ><img
+                      alt="arrow"
+                      decoding="async"
+                      height="374"
+                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                      width="413"
+                      aria-hidden="true"
+                      class="cs-icon"
+                  /></picture></div
+              ></a>
+            </li>
+            <li class="cs-item">
+              <a
+                class="cs-link"
+                href="https://grill-empire.netlify.app/"
+                target="_blank"
+                ><picture class="cs-picture"
+                  ><source
+                    media="(max-width: 600px)"
+                    srcset="/assets/images/gallery3.png" />
+                  <source
+                    media="(min-width: 601px)"
+                    srcset="/assets/images/gallery3.png" />
+                  <img
+                    alt="restaurant"
+                    decoding="async"
+                    height="346"
+                    src="/assets/images/gallery3.png"
+                    width="346"
+                    loading="lazy"
+                /></picture>
+                <div class="cs-item-text">
+                  <div class="cs-flex">
+                    <h3 class="cs-h3">Grill Empire</h3>
+                    <span class="cs-desc">Bar &amp; Grill Restaurant</span>
+                  </div>
+                  <picture class="cs-icon-wrapper"
+                    ><img
+                      alt="arrow"
+                      decoding="async"
+                      height="374"
+                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                      width="413"
+                      aria-hidden="true"
+                      class="cs-icon"
+                  /></picture></div
+              ></a>
+            </li>
+            <li class="cs-item">
+              <a
+                class="cs-link"
+                href="https://active-care-pt.netlify.app/"
+                target="_blank"
+                ><picture class="cs-picture"
+                  ><source
+                    media="(max-width: 600px)"
+                    srcset="/assets/images/gallery4.png" />
+                  <source
+                    media="(min-width: 601px)"
+                    srcset="/assets/images/gallery4.png" />
+                  <img
+                    alt="physical therapy clinic"
+                    decoding="async"
+                    height="346"
+                    src="/assets/images/gallery4.png"
+                    width="346"
+                    loading="lazy"
+                /></picture>
+                <div class="cs-item-text">
+                  <div class="cs-flex">
+                    <h3 class="cs-h3">Active Care PT</h3>
+                    <span class="cs-desc">Physical Therapy &amp; Rehab</span>
+                  </div>
+                  <picture class="cs-icon-wrapper"
+                    ><img
+                      alt="arrow"
+                      decoding="async"
+                      height="374"
+                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                      width="413"
+                      aria-hidden="true"
+                      class="cs-icon"
+                  /></picture></div
+              ></a>
+            </li>
+          </ul>
         </div>
+        <div class="cs-bubbles" aria-hidden="true"></div>
       </section>
-
-      <!-- ============================================ -->
-      <!--                   Stats                      -->
-      <!-- ============================================ -->
-
-      <!-- No headers, so no section tag -->
-      <div id="stats-316">
-        <ul class="cs-card-group">
-          <li class="cs-item">
-            <picture class="cs-picture">
-              <img
-                class="cs-icon"
-                src="/assets/images/stars.svg"
-                alt="icon"
-                width="40"
-                height="35"
-                loading="lazy"
-                decoding="async"
-                aria-hidden="true"
-              />
-            </picture>
-            <div class="cs-flex-group">
-              <span class="cs-number">10's</span>
-              <span class="cs-desc">Happy Customers</span>
-            </div>
-          </li>
-          <li class="cs-item">
-            <picture class="cs-picture">
-              <img
-                class="cs-icon"
-                src="/assets/images/Testimonial.svg"
-                alt="icon"
-                width="40"
-                height="40"
-                loading="lazy"
-                decoding="async"
-                aria-hidden="true"
-              />
-            </picture>
-            <div class="cs-flex-group">
-              <span class="cs-number">10/10</span>
-              <span class="cs-desc">Client Reviews</span>
-            </div>
-          </li>
-          <li class="cs-item">
-            <picture class="cs-picture">
-              <img
-                class="cs-icon"
-                src="/assets/images/data-collection.svg"
-                alt="icon"
-                width="40"
-                height="40"
-                loading="lazy"
-                decoding="async"
-                aria-hidden="true"
-              />
-            </picture>
-            <div class="cs-flex-group">
-              <span class="cs-number">15+</span>
-              <span class="cs-desc">Developed Sites</span>
-            </div>
-          </li>
-          <li class="cs-item">
-            <picture class="cs-picture">
-              <img
-                class="cs-icon"
-                src="/assets/images/book.svg"
-                alt="icon"
-                width="35"
-                height="40"
-                loading="lazy"
-                decoding="async"
-                aria-hidden="true"
-              />
-            </picture>
-            <div class="cs-flex-group">
-              <span class="cs-number">5</span>
-              <span class="cs-desc">Successful Partnerships</span>
-            </div>
-          </li>
-        </ul>
-      </div>
 
       <!-- ============================================ -->
       <!--                     CTA                      -->

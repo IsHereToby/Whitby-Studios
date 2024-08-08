@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+
 <html lang="en" ml-update="aware">
   <head>
     <!-- Standard meta tags -->
@@ -7,21 +8,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Founded by an alumnus of CSU Fresno with a degree in Accountancy, GSD Accountants' approach is steeped in academic rigor combined with practical expertise. The firm’s ethos is deeply rooted in leveraging cutting-edge technology to streamline tasks, ensuring cost-effective solutions while eliminating mundane processes."
+      content="Our Accounting Firm specializes in Accounting Financial Cleanup services, designed to transform your financial records into a clear and reliable resource."
     />
     <meta name="keywords" content="" />
-    <link rel="canonical" href="https://https://gsdaccountants.com/about/" />
+    <link
+      rel="canonical"
+      href="https://https://gsdaccountants.com/accounting-financials-cleanup/"
+    />
 
     <!--Social Media Display-->
-    <meta property="og:title" content="About | GSD Accountants" />
+    <meta
+      property="og:title"
+      content="Accounting Financials Cleanup | Gsd Accountants"
+    />
     <meta
       property="og:description"
-      content="Founded by an alumnus of CSU Fresno with a degree in Accountancy, GSD Accountants' approach is steeped in academic rigor combined with practical expertise. The firm’s ethos is deeply rooted in leveraging cutting-edge technology to streamline tasks, ensuring cost-effective solutions while eliminating mundane processes."
+      content="Our Accounting Firm specializes in Accounting Financial Cleanup services, designed to transform your financial records into a clear and reliable resource."
     />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://https://gsdaccountants.com/about/"
+      content="https://https://gsdaccountants.com/accounting-financials-cleanup/"
     />
     <meta property="og:image" content="/assets/images/contact.jpg" />
     <meta property="og:image:secure_url" content="/assets/images/contact.jpg" />
@@ -72,25 +79,30 @@
     <!-- Sitewide Stylesheets and Scripts -->
     <link rel="stylesheet" href="/assets/css/root.css" />
     <link rel="stylesheet" href="/assets/css/dark.css" />
+    <link rel="stylesheet" href="/assets/css/pricing.css" />
     <script defer="" src="/assets/js/nav.js"></script>
     <script defer="" src="/assets/js/dark.js"></script>
 
-    <link rel="stylesheet" href="/assets/css/about.css" />
+    <link rel="stylesheet" href="/assets/css/interior.css" />
 
     <!--For home page, use service keywords for the title, including location for SEO.
-    Other pages should just include the page name.
-    
-    EXAMPLE:
-    Home page - House Painting Contractors | Painters and Co. | TestCity, WA
-    About Page - About us | Painters and Co.
-    -->
-    <title>About | GSD Accountants</title>
+          Other pages should just include the page name.
+          
+          EXAMPLE:
+          Home page - House Painting Contractors | Painters and Co. | TestCity, WA
+          About Page - About us | Painters and Co.
+          -->
+    <title>Accounting Financials Cleanup | Gsd Accountants</title>
   </head>
-  <body class="scroll">
+  <body>
     <!--Screen reader skip main nav-->
     <a class="skip" aria-label="skip to main content" href="#main"
       >Click To Skip To Main Content</a
     >
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
 
     <!-- ============================================ -->
     <!--                 Navigation                   -->
@@ -202,7 +214,7 @@
                   <a href="/" class="cs-li-link"> Home </a>
                 </li>
                 <li class="cs-li">
-                  <a href="/about" class="cs-li-link cs-active"> About </a>
+                  <a href="/about" class="cs-li-link"> About </a>
                 </li>
                 <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                 <li class="cs-li cs-dropdown" tabindex="0">
@@ -240,7 +252,7 @@
                   </ul>
                 </li>
                 <li class="cs-li">
-                  <a href="/pricing" class="cs-li-link"> Pricing </a>
+                  <a href="/pricing" class="cs-li-link cs-active"> Pricing </a>
                 </li>
                 <li class="cs-li">
                   <a href="/portfolio" class="cs-li-link"> Portfolio </a>
@@ -279,10 +291,10 @@
 
       <div id="banner-1400">
         <div class="cs-container">
-          <span class="cs-int-title">About Us</span>
+          <span class="cs-int-title">Pricing</span>
           <div class="cs-breadcrumbs">
             <a href="/" class="cs-link">Home</a>
-            <a href="/about" class="cs-link cs-active">About</a>
+            <a href="/pricing" class="cs-link">Pricing</a>
           </div>
         </div>
         <!--Background Image-->
@@ -293,13 +305,10 @@
             srcset="/assets/images/about-1.webp"
           />
           <!--Tablet and above Image-->
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/about-1.jpg"
-          />
+          <source media="(min-width: 601px)" srcset="/assets/images/hand.jpg" />
           <img
             decoding="async"
-            src="/assets/images/about-1.jpg"
+            src="/assets/images/hand.jpg"
             alt="texes laughing"
             width="1280"
             height="568"
@@ -309,148 +318,335 @@
       </div>
 
       <!-- ============================================ -->
-      <!--                 Side By Side                 -->
+      <!--                   Pricing                     -->
       <!-- ============================================ -->
-
-      <section id="sbs-1308">
-        <div class="cs-container">
-          <!-- Left Image Section -->
-          <div class="cs-image-group">
-            <!--Floating Box-->
-            <div class="cs-box">
-              <span class="cs-desc">Detail Oriented</span>
-            </div>
-            <!--Image-->
-            <picture class="cs-picture">
-              <source
-                media="(max-width: 600px)"
-                srcset="/assets/images/IMG_3704.webp"
-              />
-              <source
-                media="(min-width: 601px)"
-                srcset="/assets/images/IMG_3704.jpg"
-              />
-              <img
-                loading="lazy"
-                decoding="async"
-                src="assets/images/IMG_3704.jpg"
-                alt="toby"
-                width="630"
-                height="630"
-                aria-hidden="true"
-              />
-            </picture>
+      <section id="pricing">
+        <div class="qst-container">
+          <div class="qst-content">
+            <span class="qst-topper">My Pricing</span>
+            <h2 class="qst-title">Service Options</h2>
+            <p class="qst-text">
+              Transparent pricing means no surprises — My services are priced
+              openly, allowing you to make an informed decision from the start.
+              Standard add-ons are listed on each card, and custom requests will
+              be considered depending on scope and feasability. Estimates can be
+              requested for sites that might not fit into a category below via
+              the <a href="/contact/" class="qst-text">contact form</a>.
+            </p>
           </div>
-          <!-- Right Content Section-->
-          <div class="cs-content">
-            <span class="cs-topper">About Us</span>
-            <h2 class="cs-title">About Whitby Studios</h2>
-            <p class="cs-text">
-              My name is Toby, I'm a web developer and founder of Whitby Studios
-              Web Design. Before starting my own company, I worked in several
-              areas, such as administration, sales, logistics, finance, and I
-              even opened my own cleaning buisness once.
-            </p>
-            <p class="cs-text">
-              During these experiences, I realized that many companies had
-              difficulty acquiring a website. They were either expensive and
-              inaccessible, or they had to build their own. Worse still, there
-              were many who invested heavily in a website and were often
-              disappointed with the return.
-            </p>
-            <p class="cs-text">
-              After a period of intense study, I thought of a way to make
-              websites accessible to companies that cannot afford to shell out
-              thousands of dollars upfront. With the first month free and a
-              monthly fee of just $149.99,I am opening the doors for smaller
-              companies to have quality websites at more affordable prices.
-            </p>
-            <a href="/contact" class="cs-button-solid">Contact Us Now</a>
-          </div>
+          <ul class="qst-card-group">
+            <li class="qst-item">
+              <span class="qst-package">Flat Rate</span>
+              <ul class="qst-ul">
+                <li class="qst-li">
+                  Custom Designed Website
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li">
+                  5 Core Pages
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li">
+                  Contact Form Integration
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li">
+                  Google Analytics Integration
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li">
+                  99+ PageSpeed Insights Score
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li"><hr /></li>
+                <li class="qst-li">Add-Ons</li>
+                <li class="qst-li">$500 - Blog Integration</li>
+                <li class="qst-li">$40/hr - Content Edits</li>
+                <li class="qst-li">$75/month - Unlimited Edits</li>
+                <li class="qst-li">$100 Per Extra Content Page</li>
+              </ul>
+              <span class="qst-price"
+                >$3,000 <span class="qst-duration">+$25/month</span> </span
+              ><a href="/contact/" class="qst-link"
+                ><span class="qst-link-text">Get Started</span>
+                <img
+                  alt="icon"
+                  decoding="async"
+                  height="20"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-arrow-right.svg"
+                  width="20"
+                  loading="lazy"
+                  aria-hidden="true"
+                  class="qst-arrow"
+              /></a>
+            </li>
+            <li class="qst-item qst-popular">
+              <span class="qst-package">All-Inclusive</span>
+              <ul class="qst-ul">
+                <li class="qst-li">
+                  Custom Designed Website
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li">
+                  5 Core Pages
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li">
+                  Contact Form Integration
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li">
+                  Google Analytics Integration
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li">
+                  99+ PageSpeed Insights Score
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li qst-highlight">
+                  Hosting, Maintenance, &amp; Upkeep
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li qst-highlight">
+                  Unlimited Monthly Edits
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li qst-highlight">
+                  1 Year Minimum Contract
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li"><hr /></li>
+                <li class="qst-li">Add-Ons</li>
+                <li class="qst-li">$500 - Blog Integration</li>
+                <li class="qst-li">$100 Per Extra Content Page</li>
+              </ul>
+              <span class="qst-price"
+                >$150 <span class="qst-duration">Per Month</span> </span
+              ><a href="/contact/" class="qst-link"
+                ><span class="qst-link-text">Get Started</span>
+                <img
+                  alt="icon"
+                  decoding="async"
+                  height="20"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-arrow-right.svg"
+                  width="20"
+                  loading="lazy"
+                  aria-hidden="true"
+                  class="qst-arrow"
+              /></a>
+            </li>
+            <li class="qst-item">
+              <span class="qst-package">E-Commerce</span>
+              <ul class="qst-ul">
+                <li class="qst-li">
+                  Shopify-Integrated Custom Website
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li">
+                  3 Core Pages + Shop
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li">
+                  Contact Form Integration
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li">
+                  Google Analytics Integration
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li">
+                  99+ PageSpeed Insights Score
+                  <img
+                    alt="checkmark"
+                    decoding="async"
+                    height="18"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-tick.svg"
+                    width="18"
+                    loading="lazy"
+                    aria-hidden="true"
+                    class="qst-icon"
+                  />
+                </li>
+                <li class="qst-li"><hr /></li>
+                <li class="qst-li">Add-Ons</li>
+                <li class="qst-li">$500 - Blog Integration</li>
+                <li class="qst-li">$40/hr - Content Edits</li>
+                <li class="qst-li">$75/month - Unlimited Edits</li>
+                <li class="qst-li">$100 Per Extra Content Page</li>
+              </ul>
+              <span class="qst-price"
+                >$7,000 <span class="qst-duration">+$25/month</span> </span
+              ><a href="/contact/" class="qst-link"
+                ><span class="qst-link-text">Get Started</span>
+                <img
+                  alt="icon"
+                  decoding="async"
+                  height="20"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-arrow-right.svg"
+                  width="20"
+                  loading="lazy"
+                  aria-hidden="true"
+                  class="qst-arrow"
+              /></a>
+            </li>
+          </ul>
         </div>
+        <div class="qst-bubbles qst-bubbles1" aria-hidden="true"></div>
+        <div class="qst-bubbles qst-bubbles2" aria-hidden="true"></div>
       </section>
-
-      <!-- ============================================ -->
-      <!--                   Stats                      -->
-      <!-- ============================================ -->
-
-      <!-- No headers, so no section tag -->
-      <div id="stats-316">
-        <ul class="cs-card-group">
-          <li class="cs-item">
-            <picture class="cs-picture">
-              <img
-                class="cs-icon"
-                src="/assets/images/stars.svg"
-                alt="icon"
-                width="40"
-                height="35"
-                loading="lazy"
-                decoding="async"
-                aria-hidden="true"
-              />
-            </picture>
-            <div class="cs-flex-group">
-              <span class="cs-number">10's</span>
-              <span class="cs-desc">Happy Customers</span>
-            </div>
-          </li>
-          <li class="cs-item">
-            <picture class="cs-picture">
-              <img
-                class="cs-icon"
-                src="/assets/images/Testimonial.svg"
-                alt="icon"
-                width="40"
-                height="40"
-                loading="lazy"
-                decoding="async"
-                aria-hidden="true"
-              />
-            </picture>
-            <div class="cs-flex-group">
-              <span class="cs-number">10/10</span>
-              <span class="cs-desc">Client Reviews</span>
-            </div>
-          </li>
-          <li class="cs-item">
-            <picture class="cs-picture">
-              <img
-                class="cs-icon"
-                src="/assets/images/data-collection.svg"
-                alt="icon"
-                width="40"
-                height="40"
-                loading="lazy"
-                decoding="async"
-                aria-hidden="true"
-              />
-            </picture>
-            <div class="cs-flex-group">
-              <span class="cs-number">15+</span>
-              <span class="cs-desc">Developed Sites</span>
-            </div>
-          </li>
-          <li class="cs-item">
-            <picture class="cs-picture">
-              <img
-                class="cs-icon"
-                src="/assets/images/book.svg"
-                alt="icon"
-                width="35"
-                height="40"
-                loading="lazy"
-                decoding="async"
-                aria-hidden="true"
-              />
-            </picture>
-            <div class="cs-flex-group">
-              <span class="cs-number">5</span>
-              <span class="cs-desc">Successful Partnerships</span>
-            </div>
-          </li>
-        </ul>
-      </div>
 
       <!-- ============================================ -->
       <!--                     CTA                      -->
@@ -522,7 +718,6 @@
           <li class="cs-nav-li">
             <span class="cs-header">Sitemap</span>
           </li>
-
           <li class="cs-nav-li">
             <a class="cs-nav-link" href="/">Home</a>
           </li>
@@ -538,7 +733,7 @@
             <span class="cs-header">Services</span>
           </li>
           <li class="cs-nav-li">
-            <a class="cs-nav-link" href="/web-design">Website Design </a>
+            <a class="cs-nav-link" href="/web-design">Website Design</a>
           </li>
           <li class="cs-nav-li">
             <a class="cs-nav-link" href="/seo">SEO</a>
@@ -556,9 +751,9 @@
             <span class="cs-header">Contact</span>
           </li>
           <!-- <li class="cs-nav-li">
-            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/phone-stroke.svg" alt="phone" width="24" height="24">
-            <a class="cs-nav-link cs-phone" href="tel: 123-456-7890">(123) 456-7890</a>
-        </li> -->
+                  <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/phone-stroke.svg" alt="phone" width="24" height="24">
+                  <a class="cs-nav-link cs-phone" href="tel: 123-456-7890">(123) 456-7890</a>
+              </li> -->
           <li class="cs-nav-li">
             <img
               class="cs-icon"

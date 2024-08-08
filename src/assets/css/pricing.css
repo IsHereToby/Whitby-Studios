@@ -1,0 +1,396 @@
+@media only screen and (min-width: 0rem) {
+  #pricing {
+    padding: var(--sectionPadding);
+    background-color: #212121;
+  }
+
+  #pricing .qst-container {
+    width: 100%;
+    max-width: 80em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+  }
+
+  #pricing .qst-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pricing .qst-topper {
+    color: var(--secondaryLight);
+  }
+
+  #pricing .qst-title,
+  #pricing .qst-text {
+    color: var(--bodyTextColorWhite);
+    opacity: 0.8;
+  }
+
+  #pricing .qst-topper,
+  #pricing .qst-title,
+  #pricing .qst-text {
+    width: 100%;
+    padding: 0 0.375rem;
+    text-align: left;
+  }
+
+  #pricing .qst-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap row;
+    justify-content: center;
+    gap: clamp(1rem, 2vw, 1.25rem);
+    transform-style: preserve-3d;
+    perspective: 700px;
+    z-index: 1;
+  }
+
+  #pricing .qst-item {
+    list-style: none;
+    width: 100%;
+    max-width: 31.25rem;
+    margin: 0;
+    box-sizing: border-box;
+    padding: clamp(1.5rem, 3vw, 2rem) clamp(1rem, 3vw, 2rem);
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 10px;
+  }
+
+  #pricing .qst-item.qst-popular {
+    background-color: #111926;
+  }
+
+  #pricing .qst-item.qst-popular .qst-li,
+  #pricing .qst-item.qst-popular .qst-duration {
+    color: var(--bodyTextColorWhite);
+  }
+
+  #pricing .qst-item.qst-popular .qst-icon {
+    filter: grayscale(1) brightness(1000%);
+  }
+
+  #pricing .qst-item.qst-popular .qst-package {
+    font-size: 2.5rem;
+    color: #ffba43;
+    margin-top: -1rem;
+  }
+
+  #pricing .qst-item.qst-popular .qst-price,
+  #pricing .qst-item.qst-popular .qst-duration {
+    color: #ffba43;
+  }
+
+  #pricing .qst-item.qst-popular .qst-link-text {
+    color: var(--bodyTextColorWhite);
+  }
+
+  #pricing .qst-item.qst-popular .qst-highlight {
+    color: #ffba43 !important;
+    font-weight: bold;
+  }
+
+  #pricing .qst-package {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 1rem;
+    color: #111926;
+  }
+
+  #pricing .qst-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  #pricing .qst-li {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.2em;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--bodyTextColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  #pricing .qst-li.qst-disabled {
+    opacity: 0.75;
+  }
+
+  #pricing .qst-highlight {
+    color: var(--primaryContrast) !important;
+  }
+
+  #pricing hr {
+    width: 100%;
+    opacity: 0.5;
+  }
+
+  #pricing .qst-icon {
+    width: 1.5rem;
+    height: auto;
+    display: block;
+  }
+
+  #pricing .qst-price {
+    font-size: 3.0625rem;
+    font-weight: 900;
+    line-height: 1.2em;
+    margin-top: auto;
+    padding-top: clamp(3rem, 6vw, 4rem);
+    color: var(--headerColor);
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+
+  #pricing .qst-duration {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+  }
+
+  #pricing .qst-link {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: var(--primaryContrast);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+    transition: color 0.3s;
+  }
+
+  #pricing .qst-link:hover .qst-arrow {
+    transform: translateX(3rem);
+  }
+
+  #pricing .qst-link-text {
+    width: fit-content;
+  }
+
+  #pricing .qst-arrow {
+    width: 1.25rem;
+    height: auto;
+    display: block;
+    transition: filter 0.3s, transform 0.3s;
+  }
+
+  #pricing .qst-bubbles {
+    font-size: min(2vw, 0.4em);
+    position: relative;
+    z-index: 0;
+  }
+
+  #pricing .qst-bubbles1 {
+    bottom: 93rem;
+    left: -3.125rem;
+    margin-right: auto;
+  }
+
+  #pricing .qst-bubbles1:before {
+    content: "";
+    width: 6.25rem;
+    height: 6.25rem;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    opacity: 0.15;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    animation-name: floatAnimation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+
+  #pricing .qst-bubbles1:after {
+    content: "";
+    width: 6.25em;
+    height: 6.25em;
+    background: var(--primary);
+    opacity: 0.7;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    left: 66px;
+    z-index: -1;
+    animation-name: floatAnimation2;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+
+  #pricing .qst-bubbles2 {
+    bottom: 0;
+    left: calc(90vw - 3.125rem);
+  }
+
+  #pricing .qst-bubbles2:before {
+    content: "";
+    width: 12.5rem;
+    height: 12.5rem;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    opacity: 0.15;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    animation-name: floatAnimation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+
+  #pricing .qst-bubbles2:after {
+    content: "";
+    width: 12.5em;
+    height: 12.5em;
+    background: var(--primary);
+    opacity: 0.7;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    animation-name: floatAnimation2;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+}
+
+@media only screen and (min-width: 33rem) {
+  #pricing .qst-topper,
+  #pricing .qst-title,
+  #pricing .qst-text {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  #pricing .qst-option2 {
+    top: auto;
+    bottom: 0;
+  }
+
+  #pricing .qst-item {
+    width: 48.9%;
+  }
+
+  #pricing .qst-bubbles1 {
+    bottom: 68.75rem;
+    left: 0;
+  }
+
+  #pricing .qst-bubbles2 {
+    bottom: -3.125rem;
+    left: calc(90vw - 6.25rem);
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  #pricing .qst-card-group {
+    flex-wrap: nowrap;
+  }
+
+  #pricing .qst-bubbles1 {
+    bottom: 37.5rem;
+    left: 0;
+  }
+}
+
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #pricing {
+    background-color: var(--darkmode-bg-max-dark);
+  }
+
+  body.dark-mode #pricing .qst-topper {
+    color: var(--primaryLight);
+  }
+
+  body.dark-mode #pricing .qst-title,
+  body.dark-mode #pricing .qst-text,
+  body.dark-mode #pricing .qst-li,
+  body.dark-mode #pricing .qst-package,
+  body.dark-mode #pricing .qst-price,
+  body.dark-mode #pricing .qst-duration {
+    color: var(--bodyTextColorWhite);
+  }
+
+  body.dark-mode #pricing .qst-text,
+  body.dark-mode #pricing .qst-duration {
+    opacity: 0.8;
+  }
+
+  body.dark-mode #pricing .qst-item {
+    background-color: var(--backgroundDark);
+    border-right: 1px solid var(--primaryLight);
+    border-top: 1px solid var(--primaryLight);
+    border-left: 1px solid var(--primaryLight);
+    border-bottom: 3px solid var(--primaryLight);
+  }
+
+  body.dark-mode #pricing .qst-item.qst-popular {
+    background-color: #111926;
+    -webkit-box-shadow: 0 0 25px -5px var(--primary);
+    box-shadow: 0 0 25px -5px var(--primary);
+    border-right: 1px solid var(--primary);
+    border-top: 1px solid var(--primary);
+    border-left: 1px solid var(--primary);
+    border-bottom: 3px solid var(--primary);
+  }
+
+  body.dark-mode #pricing .qst-icon {
+    filter: grayscale(1) brightness(1000%);
+  }
+
+  body.dark-mode #pricing .qst-bubbles1:before,
+  body.dark-mode #pricing .qst-bubbles2:before {
+    -webkit-box-shadow: 0 0 25px -5px #fff;
+    box-shadow: 0 0 15px -5px #fff;
+  }
+
+  body.dark-mode #pricing .qst-bubbles1:after,
+  body.dark-mode #pricing .qst-bubbles2:after {
+    -webkit-box-shadow: 0 0 25px -5px var(--primary);
+    box-shadow: 0 0 25px -5px var(--primary);
+  }
+}
