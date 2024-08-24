@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /blog
 Allow: /
 
-Sitemap: https://gsdaccountants.com/sitemap.xml
+Sitemap: https://whitbystudioswebdesign.com/sitemap.xml
